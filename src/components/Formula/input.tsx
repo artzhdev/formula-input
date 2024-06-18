@@ -26,7 +26,7 @@ const Formula = () => {
   };
 
   return (
-    <div>
+    <SC.Wrapper>
       <h2>Formulas</h2>
       <div>
         <SC.Container>
@@ -45,7 +45,7 @@ const Formula = () => {
         <SC.Button onClick={handleAddFormula}>Add Formula</SC.Button>
       </div>
       <FormulaList />
-    </div>
+    </SC.Wrapper>
   );
 };
 

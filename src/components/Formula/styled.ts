@@ -5,6 +5,11 @@ export const Container = styled.div`
   margin-bottom: 10px;
 `;
 
+export const Wrapper = styled.div`
+  max-width: 500px;
+  margin: 0 auto;
+`;
+
 export const Input = styled.input`
   width: 100%;
   padding: 8px;
