@@ -32,6 +32,7 @@ const calculateFormula = (
         if (foundFormula?.value) {
           return evaluateExpression(foundFormula.value);
         } else {
+          //@ts-ignore
           throw new Error(`Variable '${token}' not found`);
         }
       });
@@ -58,6 +59,7 @@ const calculateFormula = (
               result = (result as number) / operand;
               break;
             default:
+              //@ts-ignore
               throw new Error(`Unknown operator '${operator}'`);
           }
         }
